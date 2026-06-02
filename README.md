@@ -99,21 +99,22 @@ Users can:
 
 ---
 
-## ⚙️ Workflow
+## ⚙️ How It Works
 
-```mermaid
-graph TD
-A[User Login] --> B[Upload Tender]
-B --> C[Document Processing]
-C --> D[AI Analysis]
-D --> E[Generate Insights]
-E --> F[Store in Database]
-F --> G[Proposal Generation]
-F --> H[Tender Comparison]
-F --> I[AI Chat Assistant]
+```text
+1. User uploads a tender document
+           ↓
+2. AI extracts and analyzes information
+           ↓
+3. Key details, risks, and requirements are generated
+           ↓
+4. Results are stored securely in the database
+           ↓
+5. User can:
+   • Generate AI proposals
+   • Compare tenders
+   • Chat with the document
 ```
-
----
 
 ## 🚀 Key Modules
 
