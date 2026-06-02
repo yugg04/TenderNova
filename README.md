@@ -1,4 +1,3 @@
-Here's a cleaner, more professional README structure focused only on **Yug Khatri**, with a proper **Live Demo** section and improved SaaS-style presentation based on your file. 
 
 # 🚀 TenderNova
 
