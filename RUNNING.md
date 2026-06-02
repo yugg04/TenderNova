@@ -86,9 +86,4 @@ Frontend:
 http://localhost:3000
 ```
 
-Seeded demo login:
 
-```text
-demo@tendernova.ai
-password123
-```
