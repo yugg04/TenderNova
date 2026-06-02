@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0a0b0f;
+  color: #eef2ff;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 18mm 16mm 20mm;
+  }
+
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  aside,
+  nav,
+  button,
+  input,
+  select,
+  textarea,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .proposal-document {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .proposal-document::before {
+    content: "TenderNova Proposal Report";
+    display: block;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #111827;
+    padding-bottom: 10px;
+    color: #111827 !important;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .glass,
+  article,
+  section,
+  div {
+    background: transparent !important;
+    border-color: #d1d5db !important;
+    box-shadow: none !important;
+    color: #111827 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1, h2, h3, h4, p, li, span, td, th, a, strong, em {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+  }
+
+  h1 {
+    page-break-after: avoid;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+    color: #0f172a !important;
+  }
+
+  p, li {
+    font-size: 11.5pt !important;
+    line-height: 1.65 !important;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border-bottom: 1px solid #d1d5db;
+    padding: 8px;
+  }
+
+  pre, code {
+    color: #111827 !important;
+    background: #f3f4f6 !important;
+    white-space: pre-wrap;
+  }
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+@layer utilities {
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08); }
+  .gradient-text { background: linear-gradient(135deg, #6366F1, #06B6D4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .glow-indigo { box-shadow: 0 0 20px rgba(99,102,241,0.3); }
+  .glow-cyan { box-shadow: 0 0 20px rgba(6,182,212,0.3); }
+  .gradient-border { background: linear-gradient(#0A0B0F, #0A0B0F) padding-box, linear-gradient(135deg, #6366F1, #06B6D4) border-box; border: 1px solid transparent; }
+}

@@ -1,0 +1,6 @@
+# TenderNova is a Node.js / TypeScript project.
+# Python dependencies are not required.
+#
+# Install app dependencies with:
+#   cd frontend && npm install
+#   cd ../backend && npm install

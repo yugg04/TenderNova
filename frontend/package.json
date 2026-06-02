@@ -1,0 +1,55 @@
+{
+  "name": "tendernova-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "tsx prisma/seed.ts",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "@prisma/client": "latest",
+    "@prisma/adapter-pg": "latest",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-progress": "latest",
+    "@radix-ui/react-tabs": "latest",
+    "bcryptjs": "latest",
+    "clsx": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "mammoth": "latest",
+    "next": "14.2.35",
+    "next-auth": "latest",
+    "pdf-parse": "1.1.1",
+    "pg": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "latest",
+    "react-markdown": "latest",
+    "recharts": "latest",
+    "tailwind-merge": "latest",
+    "dotenv": "latest"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "latest",
+    "@types/node": "latest",
+    "@types/pg": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "14.2.35",
+    "postcss": "latest",
+    "prisma": "latest",
+    "tailwindcss": "3.4.17",
+    "tsx": "latest",
+    "typescript": "latest"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
